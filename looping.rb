@@ -29,5 +29,12 @@ def fizzbuzz_printer
 end
 
 def reverse_string(str)
-  # your code here
+  i = str.length
+  new_arr = Array.new
+
+  until i < 0
+    new_arr << str[i]
+    i -= 1
+  end
+  new_arr.join("")
 end
